@@ -1,0 +1,43 @@
+main {
+  margin-bottom: 400px;
+}
+.artikelliste {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.containerartikel {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 80px auto auto auto;
+  grid-gap: 20px;
+}
+.artikel {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.content {
+  display: flex;
+  justify-content: center;
+}
+.shown {
+  display: inline-block;
+}
+.hidden {
+  display: none;
+}
+.donot {
+  background-color: red;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+}
+.do {
+  padding: 100px;
+  background-color: red;
+  border: none;
+  border-radius: 100px;
+}
+h1 {
+  color: red;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0">
+    <title>Wetter</title>
+    <link rel="stylesheet" href="../CSS/index.css">
+    <link rel="stylesheet" href="../CSS/wetter.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Teko:wght@600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div class="containerwetter">
+        <nav class="grid-elem navbar">
+            <div class="nav-part">
+                <div class="nav-box logo">
+                    <a class="logo-link" href="../index.html">SWC</a>
+                </div>
+                <div class="nav-box login">
+                    <a class="nav-link hover-effect" href="../index.html">Log in</a>
+                </div>
+            </div>
+            <div class="nav-part"></div>
+            <div class="nav-part">
+                <div class="nav-box home">
+                    <a class="nav-link hover-effect" href="../index.html">Home</a>
+                </div>
+                <div class="nav-box news">
+                    <a class="nav-link hover-effect" href="../News/news.html">News</a>
+                </div>
+                <div class="nav-box wetter">
+                    <a class="nav-link hover-effect" href="wetter.html"><b>Wetter</b></a>
+                </div>
+                <div class="nav-box wetter">
+                    <a class="nav-link hover-effect" href="../Artikel/artikel-main.html">Artikel</a>
+                </div>
+                <div class="nav-box wetter">
+                    <a class="nav-link hover-effect" href="../Kontakt/kontakt.html">Kontakt</a>
+                </div>
+            </div>
+            <div class="nav-part nav-box">
+                <input type="search" placeholder="Suchen">
+            </div>
+        </nav>
+        <header class="grid-elem headbar">
+            <div class="titel">Gib deine Stadt ein!</div>
+        </header>
+        <main class="grid-elem hauptteil">
+            <div class="weather-container wettermittig">
+                <h1 class="wetterbreite">Wetterdaten</h1>
+                <input class="wettereingabe wetterbreite" type="text" id="city" placeholder="Stadt eingeben">
+                <button id="enter" class="wetterbutton wetterbreite" onclick="getWeather()">Wetter abrufen</button>
+                <button class="wetterbutton wetterbreite" onclick="getWeatherByLocation()">Wetter per Standort
+                    abrufen</button>
+                <div class="artikel wetterausgabe wetterbreite" id="weatherData"></div>
+            </div>
+            <script src="../java/wetter.js"></script>
+        </main>
+        <footer class="grid-elem footbar">
+            <div class="grossertext">Explore the SWC</div>
+            <div class="kleinedinger">
+                <div class="dinger hover-effect">Cookies</div>
+                <div>|</div>
+                <div class="dinger hover-effect">Terms of use</div>
+                <div>|</div>
+                <div><a class="dinger hover-effect" href="../Kontakt/kontakt.html">Kontakt</a></div>
+                <div>|</div>
+                <div><a class="dinger hover-effect" href="wetter.html">Wetter</a></div>
+                <div>|</div>
+                <div class="dinger hover-effect">Privacy Policy</div>
+                <div>|</div>
+                <div>
+                    <a class="dinger hover-effect" target="_blank"
+                        href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Free Ram</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

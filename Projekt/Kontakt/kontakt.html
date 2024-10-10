@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0">
+    <link rel="stylesheet" href="../CSS/index.css">
+    <link rel="stylesheet" href="../CSS/kontakt.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Teko:wght@600&display=swap"
+        rel="stylesheet">
+    <title>Kontakt</title>
+
+</head>
+
+<body>
+    <div class="containerkontakt">
+        <nav class="grid-elem navbarkontakt">
+            <div class="nav-part">
+                <div class="nav-box logo">
+                    <a class="logo-link" href="../index.html">SWC</a>
+                </div>
+                <div class="nav-box login">
+                    <a class="nav-link hover-effect" href="../index.html">Log in</a>
+                </div>
+            </div>
+            <div class="nav-part"></div>
+            <div class="nav-part">
+                <div class="nav-box home">
+                    <a class="nav-link hover-effect" href="../index.html">Home</a>
+                </div>
+                <div class="nav-box news">
+                    <a class="nav-link hover-effect" href="../News/news.html">News</a>
+                </div>
+                <div class="nav-box wetter">
+                    <a class="nav-link hover-effect" href="../Wetter/wetter.html">Wetter</a>
+                </div>
+                <div class="nav-box wetter">
+                    <a class="nav-link hover-effect" href="../Artikel/artikel-main.html">Artikel</a>
+                </div>
+                <div class="nav-box wetter">
+                    <a class="nav-link hover-effect" href="kontakt.html"><b>Kontakt</b></a>
+                </div>
+            </div>
+            <div class="nav-part nav-box">
+                <input type="search" placeholder="Suchen">
+            </div>
+        </nav>
+        <header class="grid-elem headbarkontakt">
+            <div class="titel">Kontaktieren sie uns! <br>artur_ferreiracruz@sluz.ch</div>
+
+        </header>
+        <main class="contentkontakt">
+            <div class="container">
+
+            </div>
+            <form action="https://formlog.offline.ch/log" method="post">
+                <div class="kleinerediv kontakt">
+
+                    <div>
+                        Kontakt
+                        <label for="vorname">Vorname</label>
+                        <input class="eingabe" type="text" name="vorname" id="vorname" placeholder="Max" required>
+                    </div>
+                    <div>
+                        <label for="nachname">Nachname</label>
+                        <input class="eingabe" type="text" name="nachname" id="nachname" placeholder="muster">
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input class="eingabe" type="email" name="email" id="email" placeholder="maxmuster@email.ch"
+                            required>
+                    </div>
+                    <div>
+                        <select required class="selecto">
+                            <option value="privat" selected>Privat-Kunde</option>
+                            <option value="geschäft">Geschäfts-Kunde</option>
+                        </select>
+                        <div class="checkbox">
+                            <label class="inlines" for="m">Mann</label>
+                            <input class="inlines" id="m" name="geschlecht" value="m" type="radio" required><br>
+                            <label class="inlines" for="f">Frau</label>
+                            <input class="inlines" id="f" name="geschlecht" value="f" type="radio" required><br>
+                            <label class="inlines" for="a">Alien</label>
+                            <input class="inlines" id="a" name="geschlecht" value="a" type="radio" required><br>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="kleinerediv">
+                    <label for="bemerkung">Bemerkung</label><br>
+                    <textarea name="bemerkung" cols="40" rows="5"
+                        placeholder="Haben sie eine Bemerkung?"></textarea><br>
+                    <button type="submit">Absenden</button>
+                </div>
+            </form>
+        </main>
+        <footer class="grid-elem footbarkontakt">
+            <div class="grossertext">
+                Explore the SWC
+            </div>
+            <div class="kleinedinger">
+                <div class="dinger hover-effect">
+                    Cookies
+                </div>
+                <div>|</div>
+                <div class="dinger hover-effect">Terms of use</div>
+                <div>|</div>
+                <div>
+                    <a class="dinger hover-effect" href="kontakt.html">Kontakt</a>
+                </div>
+                <div>|</div>
+                <div>
+                    <a class="dinger hover-effect" href="../Wetter/wetter.html">Wetter</a>
+                </div>
+                <div>|</div>
+                <div class="dinger hover-effect">Privacy Policy</div>
+                <div>|</div>
+                <div>
+                    <a class="dinger hover-effect" target="_blank"
+                        href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Free Ram</a>
+                </div>
+
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

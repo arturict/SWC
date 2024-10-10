@@ -1,0 +1,127 @@
+.checkbox,
+select,
+textarea,
+.eingabe {
+  color: white;
+  background-color: #583375;
+  font-size: x-large;
+  border-radius: 40px;
+  padding: 2px;
+  text-align: center;
+  border: none;
+  box-shadow: black 5px 5px 10px;
+}
+form {
+  width: 100%;
+  font-size: x-large;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: 220px;
+  margin-top: 100px;
+  color: white;
+}
+.kleinerediv {
+  display: inline-block;
+}
+label {
+  display: block;
+}
+.inlines {
+  display: inline-block;
+  width: 15%;
+}
+.selecto {
+  margin-top: 20px;
+  padding: 10px;
+}
+.checkbox {
+  margin-top: 20px;
+}
+button {
+  margin-top: 20px;
+  border: none;
+  color: white;
+  background-color: #583375;
+  font-size: large;
+  border-radius: 40px;
+  padding: 8px;
+  text-align: center;
+  box-shadow: black 5px 5px 10px;
+}
+.containerkontakt {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 80px auto auto auto;
+  grid-gap: 20px;
+}
+textarea {
+  padding: 10px;
+  box-shadow: black 5px 5px 10px;
+}
+.headbarkontakt {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  background-color: #583375;
+  color: white;
+  border-radius: 20px;
+  box-shadow: black 5px 5px 10px;
+}
+.navbarkontakt {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  display: grid;
+  grid-template-columns: 20% 5% 60% 10%;
+  grid-template-rows: 30px;
+  background-color: #583375;
+  box-shadow: black 2px 8px 20px;
+  height: 50px;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+.footbarkontakt {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  background-color: #583375;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: black 5px 5px 10px;
+}
+.contentkontakt {
+  width: 100%;
+}
+
+@media screen and (max-width: 1020px) {
+  .footbarkontakt {
+    padding: 0;
+    margin: 0;
+    border-radius: 20px;
+  }
+  textarea {
+    max-width: 900px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .footbarkontakt {
+    padding: 0;
+    margin: 0;
+    border-radius: 20px;
+  }
+  textarea {
+    max-width: 400px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .footbarkontakt {
+    padding: 0;
+    margin: 0;
+    border-radius: 20px;
+  }
+  textarea {
+    max-width: 300px;
+  }
+}
