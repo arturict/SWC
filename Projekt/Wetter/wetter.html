@@ -48,16 +48,27 @@
             </div>
         </nav>
         <header class="grid-elem headbar">
-            <div class="titel">Gib deine Stadt ein!</div>
+            <div class="titel">Wetter Informationen</div>
         </header>
         <main class="grid-elem hauptteil">
             <div class="weather-container wettermittig">
-                <h1 class="wetterbreite">Wetterdaten</h1>
-                <input class="wettereingabe wetterbreite" type="text" id="city" placeholder="Stadt eingeben">
-                <button id="enter" class="wetterbutton wetterbreite" onclick="getWeather()">Wetter abrufen</button>
-                <button class="wetterbutton wetterbreite" onclick="getWeatherByLocation()">Wetter per Standort
-                    abrufen</button>
-                <div class="artikel wetterausgabe wetterbreite" id="weatherData"></div>
+                <h1 class="wetterbreite">🌤️ Aktuelle Wetterdaten</h1>
+                <div class="input-container wetterbreite">
+                    <input class="wettereingabe" type="text" id="city" placeholder="Stadt eingeben (z.B. Zürich, Berlin...)">
+                    <button id="enter" class="wetterbutton" onclick="getWeather()">
+                        <i class="fas fa-search"></i> Wetter abrufen
+                    </button>
+                    <button class="wetterbutton" onclick="getWeatherByLocation()">
+                        <i class="fas fa-location-arrow"></i> Meinen Standort verwenden
+                    </button>
+                </div>
+                <div class="artikel wetterausgabe wetterbreite" id="weatherData">
+                    <div class="welcome-message">
+                        <i class="fas fa-cloud-sun"></i>
+                        <h3>Willkommen beim Wetter-Service!</h3>
+                        <p>Geben Sie eine Stadt ein oder nutzen Sie Ihren aktuellen Standort, um aktuelle Wetterdaten zu erhalten.</p>
+                    </div>
+                </div>
             </div>
             <script src="../java/wetter.js"></script>
         </main>
@@ -75,8 +86,7 @@
                 <div class="dinger hover-effect">Privacy Policy</div>
                 <div>|</div>
                 <div>
-                    <a class="dinger hover-effect" target="_blank"
-                        href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Free Ram</a>
+                    <a class="dinger hover-effect" href="#" onclick="return false;">Hilfe</a>
                 </div>
             </div>
         </footer>
